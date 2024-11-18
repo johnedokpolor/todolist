@@ -1,0 +1,25 @@
+@font-face {
+  font-family: Montserat;
+  src: url(./assets/Montserrat-VariableFont_wght.ttf);
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: Montserat;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+  }
+  body::-webkit-scrollbar {
+    display: none;
+  }
+  .light {
+    @apply h-screen overflow-hidden bg-white;
+  }
+  .dark {
+    @apply h-screen overflow-hidden bg-black text-white;
+  }
+}
